@@ -18,10 +18,10 @@ describe('Decorator', function () {
     assert.strictEqual(actual, 0)
   })
 
-  // it('should be able to add a can of paint to paint stock', function () {
-  //   decorator.addPaintCan('')
-  //   const actual = decorator.stock
-  //   assert.strictEqual(actual, 1)
-  // })
+  it('should be able to add a can of paint to paint stock', function () {
+    decorator.addPaintCan(5)
+    const actual = decorator.stockAmount()
+    assert.strictEqual(actual, 1)
+  })
 
 })
