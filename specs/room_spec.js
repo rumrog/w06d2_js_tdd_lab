@@ -8,11 +8,9 @@ describe('Room', function () {
     room = new Room(10)
   })
 
-  describe('Area', function () {
-
-    it('should have an area', function () {
-      const actual = room.area
-      assert.strictEqual(actual, 10)
-    })
+  it('should have an area', function () {
+    const actual = room.area
+    assert.strictEqual(actual, 10)
   })
+  
 })
