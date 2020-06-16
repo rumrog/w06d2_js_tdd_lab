@@ -14,11 +14,16 @@ Decorator.prototype.addPaintCan = function (paint_can) {
 }
 
 Decorator.prototype.calculateTotalCapacity = function () {
-  let totalCapacity = 0;
+  let totalCapacity = 0
   for (const paintCan of this.stock) {
-    totalCapacity += paintCan.capacity;
+    totalCapacity += paintCan.capacity
   }
-  return totalCapacity;
+  return totalCapacity
+}
+
+Decorator.prototype.canPaint = function (room) {
+  const totalCapacity = this.calculateTotalCapacity() 
+  return totalCapacity >= room.area
 }
 
 module.exports = Decorator
