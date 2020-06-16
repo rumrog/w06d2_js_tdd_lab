@@ -1,0 +1,14 @@
+{
+  "name": "w06d2_js_tdd_lab",
+  "version": "1.0.0",
+  "description": "W6D2 TDD Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs" 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
