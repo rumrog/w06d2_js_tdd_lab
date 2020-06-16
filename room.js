@@ -3,3 +3,4 @@ const Room = function (area) {
   this.painted = false
 }
 
+module.exports = Room
