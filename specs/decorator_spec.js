@@ -13,6 +13,11 @@ describe('Decorator', function () {
     assert.deepStrictEqual(actual, [])
   })
 
+  it('should be able to return stock amount', function () {
+    const actual = decorator.stockAmount()
+    assert.strictEqual(actual, 0)
+  })
+
   // it('should be able to add a can of paint to paint stock', function () {
   //   decorator.addPaint('Blue')
   //   const actual = decorator.stock
