@@ -19,8 +19,9 @@ describe('Decorator', function () {
   })
 
   // it('should be able to add a can of paint to paint stock', function () {
-  //   decorator.addPaint('Blue')
+  //   decorator.addPaintCan('')
   //   const actual = decorator.stock
-  //   assert.deepStrictEqual(actual, 1)
+  //   assert.strictEqual(actual, 1)
   // })
+
 })
