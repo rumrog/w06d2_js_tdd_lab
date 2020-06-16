@@ -19,7 +19,8 @@ describe('Room', function () {
   })
 
   it('should be able to be painted', function () {
-    const actual = room.paintRoom()
+    room.paintRoom()
+    const actual = room.painted
     assert.strictEqual(actual, true)
   })
 
