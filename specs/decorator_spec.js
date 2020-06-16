@@ -5,16 +5,16 @@ describe('Decorator', function () {
   let decorator
 
   beforeEach(function () {
-    decorator = new Decorator(0)
+    decorator = new Decorator([])
   })
 
   it('should start with an empty paint stock', function () {
     const actual = decorator.stock
-    assert.deepEqual(actual, 0)
+    assert.deepStrictEqual(actual, [])
   })
 
   // it('should be able to add a can of paint to paint stock', function () {
-  //   decorator.addPaint()
+  //   decorator.addPaint('Blue')
   //   const actual = decorator.stock
   //   assert.deepStrictEqual(actual, 1)
   // })
