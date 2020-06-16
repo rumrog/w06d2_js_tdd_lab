@@ -12,5 +12,5 @@ describe('Room', function () {
     const actual = room.area
     assert.strictEqual(actual, 10)
   })
-  
+
 })
