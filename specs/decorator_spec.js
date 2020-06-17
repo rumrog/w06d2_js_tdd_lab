@@ -5,6 +5,9 @@ const Room = require('../room.js')
 
 describe('Decorator', function () {
   let decorator
+  let paint_can1
+  let paint_can2
+  let room
 
   beforeEach(function () {
     decorator = new Decorator([])
@@ -42,5 +45,13 @@ describe('Decorator', function () {
     const actual = decorator.canPaint(room)
     assert.strictEqual(actual, true)
   })
+
+  // it('should be able to paint room if has enough paint in stock', function () {
+  //   decorator.addPaintCan(paint_can1)
+  //   decorator.addPaintCan(paint_can2)
+  //   decorator.canPaint(room)
+  //   const actual = room.painted
+  //   assert.strictEqual(actual, true)
+  // })
 
 })
